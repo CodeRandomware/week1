@@ -87,13 +87,6 @@ route.delete("/users/:id", async (ctx: Context) => {
   }
 });
 
-// // 404 page
-// app.all("*", (req, res) => {
-//   res
-//     .status(404)
-//     .send('<h1> 404 Not Found </h1> <a href="/"> back to home </a>');
-// });
-
 //open server
 app.listen(port, "localhost", () =>
   console.log(`Server is listening on port ${port}...`)
